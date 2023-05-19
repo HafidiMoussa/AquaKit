@@ -1,0 +1,564 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
+
+:root{
+  --main-color:#1c7ed6;
+   --white: rgb(238, 238, 238);
+   --black: rgb(50, 50, 54);
+    --border: 2px solid rgba(167, 167, 167, 0.452);
+    --gray:   rgba(92, 92, 92, 0.849);
+    --light-gray:  rgba(245, 245, 245, 0.932);
+}
+html {
+  font-size: 62.5%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  border: none;
+  font-family: "Droid Arabic Kufi", "Nunito", sans-serif;
+text-decoration: none;
+}
+html::-webkit-scrollbar {
+  width: 12px;
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 10px;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+.introduction-part{
+    display: flex;
+    flex-direction: column;
+    height: 101vh;
+    background: url(pictures/deep\ ocean.jpg);
+      background-size:cover;
+      /* background-color: rgb(0, 0, 29); */
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    height: 8rem;
+    align-items: center;
+   background-color: rgba(0, 0, 0, 0.466);
+}
+.logo-name{
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    color:var(--white);
+    font-size: 2.6rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    transition-delay: 1s;
+}
+.logo-picture{
+    width: 5rem;
+    height: 3.5rem;
+    margin-top: 1rem;
+    transition-delay: 1s;
+}
+.sign-up{
+    background-color: var(--main-color);
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0rem 2rem;
+    border-radius: 10px;
+    transition-delay: 1s;
+}
+.sign-up:hover{
+     background:transparent;
+   color: var(--white);
+    border: 2px solid white;
+}
+.sign-in{
+    color: var(--white);
+    font-size: 1.5rem;
+     padding: 0rem 2rem;
+      font-weight: 700;
+       transition: 0.2s;
+       border-radius: 10px;
+        transition-delay: 1s;
+}
+.sign-in:hover{
+   transform: scale(1.02);
+   background-color: var(--white);
+   color: var(--black);
+    }
+.intro-block{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+   padding: 0rem;
+   align-items: end;
+   padding-top: 5rem;
+    background-color: rgba(0, 0, 0, 0.466);
+    position: relative;
+    }
+.intro-info{
+ display: flex;
+ flex-direction: column;
+padding-right: 2rem;
+ margin-right: 5rem;
+ margin-top: 5rem;
+ transition-delay: 1s;
+}
+.buttons{
+    margin-top: 3rem;
+     display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 3rem;
+}
+.join-us{
+     color: var(--white);
+    font-size: 2rem;
+    padding: 0.2rem 4rem;
+    border-radius: 10px;
+    border: 2px solid rgba(180, 180, 180, 0.651);
+     transition: 0.2s;
+      transition-delay: 1s;
+}
+.join-us:hover{
+   transform: scale(1.02);
+   background-color: var(--white);
+   color: var(--black);
+    }
+.order{
+    background-color: var(--main-color);
+     color: var(--white);
+    font-size: 2rem;
+    padding: 0.2rem 4rem;
+    border-radius: 10px;
+    border: 2px solid rgba(180, 180, 180, 0.651);
+     transition: 0.2s;
+      transition-delay: 1.5s;
+    }
+    .order:hover{
+     background:transparent;
+   color: var(--white);
+    border: 2px solid white;
+    }
+    .intro-paragraph{
+        color: var(--white);
+        font-size: 5rem;
+        font-family: 'IBM Plex Sans', sans-serif;
+         transition-delay: 1s;
+        }
+    .intro-details{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 2rem;
+        color:var(--white);
+        background-color: rgba(5, 5, 5, 0.445);
+       width: 50rem;
+       transition-delay: 1s;
+    }
+    .intro-details p {
+        font-size: 1.9rem ;
+        font-weight: 900;
+         transition-delay: 0.5s;
+    }
+    .view-more{
+        background-color: rgba(153, 153, 153, 0.5);
+        font-size: 2rem;
+        color: var(--white);
+        width: 20rem;
+        display: flex;
+        margin-top: 2rem;
+        align-items: center;
+        justify-content: center;
+         transition-delay: 1s;
+    }
+     .view-more:hover{
+       background-color:  rgba(255, 255, 255, 0.5);
+     }
+  .information-section{
+    background: url(pictures/waw.jpg);
+    background-size: cover;
+    height: 100vh;
+  }
+   .info-container{
+     display: flex;
+    flex-direction: column;
+     background-color: rgba(255, 255, 255, 0.493); 
+     height: 100vh;
+       padding: 1rem 1rem;
+       justify-content: start;
+       align-items: center;
+        position: relative;
+   }
+  .tanks-photos{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: end;
+   
+     /* padding-top: 2rem; */
+  }
+  .picture01{
+    width:55rem;
+    aspect-ratio: 4/3;
+    margin-right: 3rem;
+    }
+   .picture02{
+  width: 30rem;
+  height: 40rem;
+  position: absolute;
+  right: 2rem;
+   top: 25rem;
+   }
+    .tanks-photos p{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--black);
+    width:60rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: rgba(255, 255, 255, 0.479);
+     padding: 0.8rem;
+  
+   }
+    .tanks-photos p span{
+      font-weight: 700;
+      background-color: white;
+       border-radius: 5px;
+       margin-right: 0.5rem;
+    }
+
+   .additional-text{
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--black);
+    width:88rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+   margin-left: 3.4rem ;
+    background-color: rgba(255, 255, 255, 0.479);
+    padding: 0.8rem;
+    
+   }
+   .about-iot-section{
+    background-color: white;
+    height:100%;
+    border-top: 3px solid rgb(0, 0, 126);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem ;
+   align-items: center;
+   }
+  
+   .main-header{
+      color: var(--black);
+      font-size: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Josefin Sans', sans-serif;
+      padding: 2rem;
+    }
+   .iot-box-container{
+     display: flex;
+    flex-direction: row;
+    gap : 1rem;
+    justify-content: center;
+   }
+   .iot-box{
+     display: flex;
+    flex-direction: column;
+    border: 2px solid var(--black);
+    border-radius: 10px;
+   }
+   .iot-picture{
+    width: 25rem;
+    aspect-ratio: 4/3;
+    padding: 1rem;
+    }
+
+   .iot-picture-title{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 3.4rem;
+     background-color: var(--main-color);
+     color: var(--white);
+     
+   }
+   .how-iot-work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0rem;
+    
+   }
+   .how-iot-work h1{
+    font-size: 5rem;
+      font-family: 'Josefin Sans', sans-serif;
+      color: var(--black);
+  
+   }
+   .how-iot-work p{
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: var(--gray);
+    width: 120rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 0.8rem;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+   }
+
+   .the-map-photo{
+    width: 100rem;
+    aspect-ratio: 16/9;
+    margin-top: 4rem;
+}
+   .join-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   margin-top: 3rem;
+    gap: 2rem;
+    padding: 1rem;
+    border: var(--border);
+   }
+   .fish-farming-image{
+     width:52rem;
+     height:26rem;
+    }
+  
+.text-and-button{
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    justify-content: center;
+    padding: 1rem;
+   }
+    #second-text{
+     align-items:start;
+   }
+   .text-and-button p {
+    font-size: 2.6rem;
+    font-weight: 500;
+   color: var(--gray);
+    width: 70rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+     padding: 0.8rem;
+     margin-bottom: 1rem;
+   }
+  #buy-botton{
+    background-color: rgb(0, 0, 90);
+    color: var(--light-gray);
+    font-size: 2.6rem;
+    font-weight: 700;
+    padding: 0rem 2rem;
+    border-radius: 10px;
+    margin-right: 1.5rem;
+   }
+    #buy-botton:hover{
+     background-color: var(--main-color);
+    }
+    .our-socials{
+    background:url(pictures/top-view-fish-with-ice-cubes.jpg);
+    background-size: cover;
+    height:110vh;
+   display: flex;
+    flex-direction: row;
+    padding: 2rem ;
+   align-items: center;
+   justify-content: end;
+   margin-top: 3rem;
+   border-top: 3px solid rgb(0, 0, 40);
+   }
+ .socials-info{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.432);
+  padding: 2rem;
+ }
+
+ .social {
+  color: var(--white);
+  font-size: 5rem;
+  margin: 1rem;
+
+  }
+
+.social:hover{
+   color: var(--main-color);
+}
+.socials-info p{
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 700;
+}
+.footer{
+  background-color: rgb(0, 0, 40);
+  height: 40vh;
+  border-top: 2px solid white; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 30rem;
+  padding-top: 4rem;
+}
+.right-left-side{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:start;
+}
+.footer-left-elements{
+  font-size: 2rem;
+ color: var(--white);
+ display: flex;
+  align-items:center;
+  border-bottom: 1px solid white;
+}
+.footer-left-elements:hover{
+  color: rgb(223, 200, 72);
+}
+.footer-right-elements{
+    font-size: 2rem;
+ color: var(--white);
+ display: flex;
+  align-items:center;
+  border-bottom: 1px solid white;
+}
+.algeria-flag{
+  width: 3rem;
+  height: 3rem;
+  margin-left: 0.8rem;
+}
+ .fa-location-dot{
+margin-right: 1rem;
+}
+.hidden{
+  opacity: 0;
+  transition: transform 1s;
+  filter: blur(5px);
+  transform: translateX(-100%);
+}
+.hidden01{
+  opacity: 0;
+  transition: transform 1s;
+  filter: blur(5px);
+  transform: translateX(100%);
+}
+.hidden02{
+  opacity: 0;
+  transition: transform 1s;
+  filter: blur(5px);
+  transform: translateY(-100%);
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transform: translateY(0);
+  transition-delay:100ms ;
+}
+/*IOT section slides*/
+.iot-box:nth-child(1){
+  transition-delay: 100ms;
+}
+.iot-box:nth-child(2){
+  transition-delay: 200ms;
+}
+.iot-box:nth-child(3){
+  transition-delay:300ms;
+}
+.iot-box:nth-child(4){
+  transition-delay: 400ms;
+}
+.iot-box:nth-child(5){
+  transition-delay: 500ms;
+}
+/*social slides*/
+.social:nth-child(2){
+  transition-delay: 200ms;
+}
+.social:nth-child(3){
+  transition-delay: 300ms;
+}
+.social:nth-child(4){
+  transition-delay: 400ms;
+}
+/*footer left side slides*/
+.footer-left-elements:nth-child(2){
+ transition-delay:200ms;
+}
+.footer-left-elements:nth-child(3){
+ transition-delay:300ms;
+}
+.footer-left-elements:nth-child(4){
+ transition-delay:400ms;
+}
+.footer-left-elements:nth-child(5){
+ transition-delay:500ms;
+}
+/*footer right side slides*/
+.footer-right-elements:nth-child(2){
+ transition-delay:200ms;
+}
+.footer-right-elements:nth-child(3){
+ transition-delay:300ms;
+}
+.footer-right-elements:nth-child(4){
+ transition-delay:400ms;
+}
+
+/* The information Page */
+
+.information-body{
+  background-color: rgb(0, 0, 48);
+  height: 100vh;
+}
+.information-block{
+  /* background-color: rgb(0, 0, 48); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+   background-color: rgba(0, 0, 0, 0.466);
+  gap :3rem;
+}
+
+.information-block h1{
+  color: var(--light-gray);
+  font-size: 5rem;
+}
+.information-block h2{
+  color: var(--light-gray);
+    font-size: 3rem;
+}
+.information-block div{
+  color: var(--light-gray);
+  border: 2px solid rgba(255, 255, 255, 0.781);
+  width:40rem;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:2.8rem;
+}
